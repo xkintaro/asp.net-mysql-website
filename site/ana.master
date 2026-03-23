@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ana.master.cs" Inherits="ana" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/media_query.css" />
+    <link rel="stylesheet" href="assets/css/kintaro.css" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <title>kwnet</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- SİSTEM MESAJI ÇIKIŞ YAP -->
+        <div class="kintaro-system-message-container" id="kintaroSystemMessageContainerLogoutForm">
+            <div class="kintaro-system-message-box">
+                <div class="kintaro-column w12 justifyContent-Right display-Flex">
+                    <span class="kintaro-close-button" onclick="kintaroSystemMessageContainerLogoutFormClose()">+</span>
+                </div>
+                <div class="kintaro-column marginY-20">
+                    <p class="text">
+                        Çıkış yapmak istediğinize emin miniz?
+                    </p>
+                </div>
+                <div class="kintaro-column display-Flex gap-10 justifyContent-Right">
+                    <span class="kintaro-button red" onclick="kintaroSystemMessageContainerLogoutFormClose()">İptal</span>
+                    <a href="<%= ResolveUrl("~/kullaniciCikis.aspx") %>" class="kintaro-button darkGreen">Onayla</a>
+                </div>
+            </div>
+        </div>
+        <!-- SİSTEM MESAJI ÇIKIŞ YAP END -->
+        <header class="kintaro-container header-container">
+            <div class="navbar">
+                <a class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </a>
+                <a href="<%= ResolveUrl("~/Default.aspx") %>" class="navbar-brand">
+                    <h1 class="title">kwnet</h1>
+                </a>
+                <nav class="">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="<%= ResolveUrl("~/Default.aspx") %>" class="navbar-link">Anasayfa</a>
+                        </li>
+                        <li>
+                            <a href="<%= ResolveUrl("~/hakkimizda.aspx") %>" class="navbar-link">Hakkımızda</a>
+                        </li>
+                        <li>
+                            <a href="<%= ResolveUrl("~/kategoriler.aspx") %>" class="navbar-link">Kategoriler</a>
+                        </li>
+                    </ul>
+                </nav>
+                <span id="navbarUserNull" runat="server">
+                    <a href="<%= ResolveUrl("~/hesabim.aspx") %>">
+                        <span class="navbar-actions-user-null">
+                            <label class="navbar-signin-text">Hesabım</label>
+                            <img src="upload/default/user.png" class="user-icon" />
+                        </span>
+                    </a>
+                </span>
+                <div class="navbar-actions-dropdown-container" id="navbarUser" runat="server">
+                    <span class="navbar-actions-dropdown-button">
+                        <asp:Label CssClass="navbar-signin-text" ID="LabelKullaniciAdiHeader" runat="server" Text="Hesabım"></asp:Label>
+                        <asp:Image ID="ImageUserProfile" CssClass="user-icon" runat="server" />
+                    </span>
+                    <div class="navbar-actions-dropdown-menu">
+                        <a href="<%= ResolveUrl("~/hesabim.aspx") %>" class="navbar-actions-dropdown-menu-link">Profilim</a>
+
+                        <span id="adminButton" runat="server">
+                            <a href="<%= ResolveUrl("~/admin") %>" style="border-radius: 0;" class="navbar-actions-dropdown-menu-link ">Yönetim</a>
+                        </span>
+                        <a href="<%= ResolveUrl("~/favorilerim.aspx") %>" class="navbar-actions-dropdown-menu-link">Favorilerim</a>
+                        <a href="<%= ResolveUrl("~/hesabimAyarlar.aspx") %>" class="navbar-actions-dropdown-menu-link">Ayarlar</a>
+                        <a onclick="kintaroSystemMessageContainerLogoutFormOpen()" class="navbar-actions-dropdown-menu-link logout">Çıkış Yap</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script>
+            function kintaroSystemMessageContainerLogoutFormOpen() {
+                var kintaroSystemMessageContainerLogoutForm = "kintaroSystemMessageContainerLogoutForm";
+                document.getElementById(kintaroSystemMessageContainerLogoutForm).style.display = "block";
+            }
+            function kintaroSystemMessageContainerLogoutFormClose() {
+                var kintaroSystemMessageContainerLogoutForm = "kintaroSystemMessageContainerLogoutForm";
+                document.getElementById(kintaroSystemMessageContainerLogoutForm).style.display = "none";
+            }
+        </script>
+        <asp:ContentPlaceHolder ID="main" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/ana.master" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
+
+ <link rel="stylesheet" href="../assets/css/main.css" />
+      
+      <link rel="stylesheet" href="../assets/css/media_query.css" />
+      
+      <link rel="stylesheet" href="../assets/css/kintaro.css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="main" runat="Server">
+    <div class="kintaro-container">
+        <div class="kintaro-row display-Flex gap-10">
+            <div class="sidebar close">
+                <div class="logo-details">
+                    <i class='bx bx-menu'></i>
+                    <span class="logo_name">Yönetim</span>
+                </div>
+                <ul class="nav-links">
+                    <!---->
+                    <li>
+                        <a href="Default.aspx">
+                            <i class='bx bx-grid-alt'></i>
+                            <span class="link_name">Dashboard</span>
+                        </a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a href="icerikler.aspx">
+                            <i class='bx bx-camera-movie'></i>
+                            <span class="link_name">İçerikler</span>
+                        </a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a href="kategoriler.aspx">
+                            <i class='bx bx-collection'></i>
+                            <span class="link_name">Kategoriler</span>
+                        </a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a href="kullanicilar.aspx">
+                         <i class='bx bx-user'></i>
+                            <span class="link_name">Kullanıcılar</span>
+                        </a>
+                    </li>
+                    <!---->
+                    <li>
+                        <a href="mesajlar.aspx">
+                            <i class='bx bx-chat'></i>
+                            <span class="link_name">Mesajlar</span>
+                        </a>
+                    </li>
+                    <!---->
+                                    </ul>
+            </div>
+            <section class="home-section">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+        </div>
+    </div>
+  
+  <script  src="../assets/js/header.js"></script>
+   
+       <script  src="../assets/js/slider.js"></script>
+  
+       <script  src="../assets/js/sidebar.js"></script>
+   
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</asp:Content>
+

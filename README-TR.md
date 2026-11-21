@@ -2,21 +2,21 @@
   <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
 </a>
 <a href="README-TR.md">
-  <img src="https://img.shields.io/badge/Dil-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
+  <img src="https://img.shields.io/badge/Language-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
 </a>
 
   <br />
   <br />
 
 <div align="center">
-  <img src="md/kintaro.png" width="120" height="120" />
+  <img src="md/mascot.png" width="120" height="120" />
   <br />
   <br />
 
   <p>
-    Okul projesi için kapsamlı film sitesi
+     Okul projesi için ASP.NET ve MySQL ile hazırlanmış bir film sitesi.
   </p>
- 
+
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
@@ -26,186 +26,113 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
   <p>
+    <a href="#info">Bilgilendirme</a> •
+    <a href="#about">Hakkında</a> •
     <a href="#features">Özellikler</a> •
     <a href="#tech">Teknolojiler</a> •
-    <a href="#installation">Kurulum</a> •
-    <a href="#license">Lisans</a> •
-    <a href="#gallery">Galeri</a>
+    <a href="#setup">Kurulum</a> •
+    <a href="#gallery">Galeri</a> •
+    <a href="#license">Lisans</a>
   </p>
 
   <br />
   <br />
 </div>
 
-## 📋 Hakkında
+## <a id="info"></a> 📌 Bilgilendirme
 
-**kwnet**, filmlerin admin tarafından yüklenip yayınlandığı, kullanıcıların ise bu filmleri keşfedip izleyebildiği, yorum bırakabildiği ve favorilerine ekleyebildiği kapsamlı bir film izleme platformudur.
+Projedeki örnek görseller ve videolar sahiplerine aittir. Yalnızca bu okul projesinde örnek içerik olarak kullanılmıştır.
 
-Proje; kullanıcı tarafı ve yönetim paneli olmak üzere iki ana bölümden oluşmaktadır. Kullanıcılar siteye kayıt olarak filmleri izleyebilir, yorum yapabilir ve favorilerine ekleyebilir. Film ekleme, düzenleme ve silme gibi içerik yönetimi işlemleri **yalnızca admin yetkisine sahip kullanıcılar** tarafından yönetim paneli üzerinden gerçekleştirilmektedir.
+## <a id="about"></a> 📋 Hakkında
 
-## 🎓 Okul Projesi
+**kwnet**, web programlama ve veritabanı derslerinde öğrendiklerimi uygulamak için okul projesi olarak hazırladığım bir film sitesidir. Filmleri yöneticiler yükleyip yayınlar, kullanıcılar ise bu filmleri izleyebilir, yorum yazabilir ve favorilerine ekleyebilir. Proje, ASP.NET Web Forms ile sunucu taraflı geliştirme, MySQL ile veritabanı tasarımı, oturum yönetimi, CRUD işlemleri ve dosya yükleme konularını kapsar. Arayüz Türkçedir.
 
-Bu proje, web programlama ve veritabanı yönetimi derslerinde edinilen bilgilerin pratiğe dökülmesi amacıyla geliştirilmiştir. ASP.NET Web Forms teknolojisi ile sunucu taraflı web geliştirme, MySQL ile ilişkisel veritabanı tasarımı, kullanıcı oturum yönetimi, CRUD işlemleri ve dosya yükleme gibi temel web geliştirme konularının uygulamalı olarak öğrenilmesini hedeflemektedir.
+## <a id="features"></a> ✨ Özellikler
 
-Akademik bir çalışma olması nedeniyle, projenin bazı alanlarında (güvenlik, performans optimizasyonu vb.) iyileştirme yapılabilir. Ancak proje; bir web uygulamasının baştan sona geliştirilmesi sürecini, veritabanı tasarımını, kullanıcı arayüzü oluşturmayı ve yönetim paneli geliştirmeyi kapsayan bütünleşik bir öğrenme deneyimi sunmaktadır.
+- **Kayıt ve giriş**: Adım adım ilerleyen bir formla kayıt olun, kullanıcı adınız ve şifrenizle giriş yapın.
+- **Profiller**: Kendi profilinizi ve diğer kullanıcıların profillerini görüntüleyin, kullanıcı adınızı, şifrenizi, profil fotoğrafınızı ve biyografinizi değiştirin.
+- **Film sayfaları**: Filmi video oynatıcıda izleyin, açıklamasını, görüntülenme sayısını, yayınlayan kişiyi ve yorumları görün.
+- **Arama**: Ana sayfada filmleri adına göre arayın.
+- **Daha fazla göster**: Bir butonla daha fazla film ve yorum gösterin.
+- **Diğer filmler**: Film sayfası, yan panelde diğer filmleri listeler.
+- **Yorumlar**: Filmlere yorum yazın, kendi yorumlarınızı düzenleyin ya da silin.
+- **Favoriler**: Filmleri favorilerinize ekleyin ve favorilerim sayfasında görün.
+- **Kategoriler**: Kategorilere göz atın ve bir kategorideki filmleri listeleyin.
+- **İletişim formu**: Hakkımızda sayfasından mesaj gönderin.
+- **Yönetim paneli**: Yöneticiler dört adımda film ekleyebilir, filmlerin başlığını, kategorisini, açıklamasını, kapağını ve videosunu düzenleyebilir, filmleri silebilir, kategorileri yönetebilir, kullanıcıları görebilir ve mesajları okuyup silebilir.
 
-## ✨ Özellikler <a id="features"></a>
+## <a id="tech"></a> 🛠️ Teknolojiler
 
-### 👤 Kullanıcı Yönetimi
+`ASP.NET Web Forms` · `C#` · `.NET Framework 4.8` · `MySQL` · `MySql.Data` · `ImageResizer` · `HTML` · `CSS` · `JavaScript`
 
-- **Kayıt Olma**: Çok adımlı kayıt formu
-- **Giriş Yapma**: Kullanıcı adı ve şifre ile oturum açma
-- **Çıkış Yapma**: Onay dialogu ile güvenli çıkış
-- **Profil Görüntüleme**: Kendi profilini ve diğer kullanıcıların profilini görüntüleme
-- **Profil Düzenleme**: Kullanıcı adı, şifre ve profil resmi güncelleme
-
-### 🎥 Film İzleme
-
-- **Film Detay Sayfası**: Video oynatıcı, kapak resmi, açıklama, görüntülenme sayısı, yayıncı bilgisi, yorumlar
-- **Film Arama**: Anasayfada anlık film arama özelliği
-- **Görüntülenme Sayacı**:
-Her film için otomatik görüntülenme takibi
-- **Daha Fazla Göster**: Sayfalama ile daha fazla film yükleme
-- **Öneri Sistemi**: Film detay sayfasında yan panelde diğer filmler
-
-### 💬 Etkileşim Sistemi
-
-- **Yorum Yazma**: Oturum açmış kullanıcılar için filmlere yorum yazabilme
-- **Yorum Düzenleme**: Kendi yorumlarını düzenleme
-- **Yorum Silme**: Onay dialogu ile yorum silme
-- **Favorilere Ekleme**: Filmleri favorilere ekleme ve çıkarma
-- **Favorilerim Sayfası**: Favori filmlerin listelendiği kişisel sayfa
-
-### 🗂️ Kategori Sistemi
-
-- **Kategori Listeleme**: Tüm film kategorilerinin görüntülenmesi
-- **Kategori Detay**: Seçilen kategoriye ait filmlerin filtrelenmesi
-- **Kategori Yönetimi**: Admin panelinden kategori ekleme/silme/güncelleme
-
-### 🛡️ Yönetim Paneli
-
-- **Dashboard**: Yönetim paneli ana sayfa
-- **Film Yönetimi**: Tüm filmleri listeleme, detay görüntüleme, başlık/açıklama/kategori/resim/video güncelleme
-- **Film Ekleme**: 4 adımlı film ekleme sihirbazı (başlık → kategori → açıklama → kapak resmi & video dosyası)
-- **Kullanıcı Yönetimi**: Tüm kullanıcıları listeleme ve detay görüntüleme
-- **Kategori Yönetimi**: Film kategorilerini listeleme, ekleme, düzenleme ve silme
-- **Mesaj Yönetimi**: İletişim formundan gelen mesajları listeleme, detay görüntüleme ve silme
-- **Rol Kontrolü**: Yalnızca "admin" rolüne sahip kullanıcıların erişimi
-
-### 🎨 Arayüz & Tasarım
-
-- **Özel CSS Framework**: Kendi geliştirdiğim özel "kintaroCSS" kütüphanesi
-- **Responsive Tasarım**: Media query'ler ile kusursuz şekilde her cihaz için uyumlu arayüz
-
-## <a id="tech"></a>🛠️ Teknolojiler
-
-### Backend
-
-- **ASP.NET 4.8**: Sunucu taraflı web framework
-- **C#**: Backend programlama dili
-- **MySQL**: İlişkisel veritabanı yönetim sistemi
-
-### Frontend
-
-- **HTML5**: Sayfa yapısı ve semantik işaretleme
-- **CSS3**: Stil ve görsel tasarım
-- **JavaScript**: İstemci taraflı etkileşimler
-
-### Araçlar
-
-- **IIS / IIS Express**: Web sunucusu
-- **phpMyAdmin**: Veritabanı yönetimi
-- **XAMPP**: Yerel geliştirme ortamı (Apache + MariaDB)
-- **Visual Studio**: IDE (Geliştirme Ortamı)
-
-## 🚀 Kurulum <a id="installation"></a>
+## <a id="setup"></a> 🚀 Kurulum
 
 ### Gereksinimler
 
-- **Visual Studio**: [Visual Studio](https://visualstudio.microsoft.com/tr/)
-- **.NET Framework 4.8**: [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)
-- **XAMPP**: [XAMPP](https://www.apachefriends.org/)
-- **MySQL**: XAMPP ile birlikte gelir
+- **Visual Studio**: [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
+- **.NET Framework 4.8**: [https://dotnet.microsoft.com/download/dotnet-framework/net48](https://dotnet.microsoft.com/download/dotnet-framework/net48)
+- **XAMPP** veya başka bir MySQL sunucusu: [https://www.apachefriends.org/](https://www.apachefriends.org/)
 
 ### Adım Adım Kurulum
 
-1. **Depoyu Klonlayın:**
+1. **Depoyu klonlayın**
 
-```bash
-git clone https://github.com/xkintaro/asp.net-mysql-website.git
-cd asp.net-mysql-website
-```
+   ```bash
+   git clone https://github.com/xkintaro/asp.net-mysql-website.git
+   cd asp.net-mysql-website
+   ```
 
-2. **Veritabanını Oluşturun**
+2. **Veritabanını oluşturun**
 
-- **XAMPP**'ı başlatın ve **Apache** ile **MySQL** servislerini çalıştırın.
-- Tarayıcınızda `http://localhost/phpmyadmin` adresine gidin.
-- Sol panelden **"Yeni"** butonuna tıklayarak `kwnet` adında yeni bir veritabanı oluşturun.
-- Oluşturduğunuz veritabanını seçin ve **import** sekmesine tıklayın.
-- Projede bulunan `kwnet.sql` dosyasını içeri aktarın.
+   - XAMPP kontrol panelinden **Apache** ve **MySQL** servislerini başlatın.
+   - [http://localhost/phpmyadmin](http://localhost/phpmyadmin) adresini açın ve `kwnet` adında yeni bir veritabanı oluşturun.
+   - Veritabanını seçin, **İçe Aktar** sekmesini açın ve `kwnet.sql` dosyasını içe aktarın.
 
-3. **Bağlantı Ayarlarını Yapılandırın**
+3. **Bağlantı ayarlarını kontrol edin**
 
-`site/Web.config` dosyasındaki bağlantı dizesini kendi ortamınıza göre düzenleyin:
+   Ortamınız farklıysa `site/Web.config` dosyasındaki bağlantı dizesini güncelleyin:
 
-```xml
-<connectionStrings>
-    <add name="MyDbConnection"
-         connectionString="Server=localhost;Database=kwnet;User Id=root;Password=;"
-         providerName="MySql.Data.MySqlClient" />
-</connectionStrings>
-```
+   ```xml
+   <connectionStrings>
+       <add name="MyDbConnection"
+            connectionString="Server=localhost;Database=kwnet;User Id=root;Password=;"
+            providerName="MySql.Data.MySqlClient" />
+   </connectionStrings>
+   ```
 
-> Varsayılan olarak XAMPP'ın MySQL root kullanıcısının şifresi boştur. Eğer şifre belirlediyseniz `Password=` alanını güncelleyin.
+   XAMPP'te MySQL root kullanıcısının varsayılan olarak şifresi yoktur.
 
-4. **Projeyi Visual Studio'da Açın**
+4. **Projeyi Visual Studio'da açın**
 
-- Visual Studio'yu açın.
-- **"file → open → website"** yolunu izleyin.
-- `site/` klasörünü seçin.
-- Projeyi açtıktan sonra **Ctrl + F5** veya **Run** butonu ile çalıştırın.
+   - **File → Open → Web Site** yolunu izleyin ve `site/` klasörünü seçin.
+   - Projeyi **Ctrl + F5** ile çalıştırın.
 
-5. **Uygulamaya Erişin**
+Siteyi `http://localhost:{port}/Default.aspx`, yönetim panelini ise `http://localhost:{port}/admin/` adresinde açın.
 
-- Site: `http://localhost:{port}/Default.aspx`
-- Yönetim Paneli: `http://localhost:{port}/admin/`
+### Varsayılan Yöneticiler
 
-### Varsayılan Admin Hesapları
+- **Kullanıcı adı**: `admin` · **Şifre**: `12345678`
+- **Kullanıcı adı**: `kintaro` · **Şifre**: `12345678`
 
-- Kullanıcı adı: `admin` | Şifre: `12345678`
-- Kullanıcı adı: `kintaro` | Şifre: `12345678`
+## <a id="gallery"></a> 🖼️ Galeri
 
-## 📄 Lisans <a id="license"></a>
+<img src="md/20260322211830653.jpg" />
 
-Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
+<img src="md/20260322211830551.jpg" />
 
-## 🖼️ Galeri <a id="gallery"></a>
+<img src="md/20260322211830350.jpg" />
 
-<img src="md/20260322211830653.jpg" width="100%" />
+<img src="md/20260322211830252.jpg" />
 
-#
+<img src="md/20260322211830152.jpg" />
 
-<img src="md/20260322211830551.jpg" width="100%" />
+<img src="md/20260322211830037.jpg" />
 
-#
+<img src="md/20260322211830003.jpg" />
 
-<img src="md/20260322211830350.jpg" width="100%" />
+## <a id="license"></a> 📄 Lisans
 
-#
-
-<img src="md/20260322211830252.jpg" width="100%" />
-
-#
-
-<img src="md/20260322211830152.jpg" width="100%" />
-
-#
-
-<img src="md/20260322211830037.jpg" width="100%" />
-
-#
-
-<img src="md/20260322211830003.jpg" width="100%" />
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
 
 #
 
